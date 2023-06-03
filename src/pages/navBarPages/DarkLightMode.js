@@ -11,11 +11,11 @@ const DarkLightMode = () => {
   const [lightMode, setLightMode] = useState(); //["Aydınlık Mod","Light Mod"]
   useEffect(() => {
     if (language === "tr-TR") {
-      setDarkMode("Karanlık Mod");
-      setLightMode("Aydınlık Mod");
+      setDarkMode("KARANLIK MOD");
+      setLightMode("AYDINLIK MOD");
     } else if (language === "en-US") {
-      setDarkMode("Dark Mod");
-      setLightMode("Light Mod");
+      setDarkMode("DARK MOD");
+      setLightMode("LIGHT MOD");
     }
   }, [language]);
 

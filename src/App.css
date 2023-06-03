@@ -1,5 +1,9 @@
 body {
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
+}
+#AppMain {
+  display: flex;
+  justify-content: center;
 }
 hr {
   border: 1px solid #BAB2E7;
@@ -61,7 +65,20 @@ color: #AEBCCF;
   color: #b7aaff;
 }
 
-#AppMain {
-  display: flex;
-  justify-content: center;
+.light-mode h5 {
+  color: #000000;
 }
+
+.dark-mode h5 {
+  color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
