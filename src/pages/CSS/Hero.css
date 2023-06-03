@@ -1,37 +1,37 @@
 #HeroMain {
-  margin-top: 88px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
+  width: 100%;
+  margin-top: 40px;
 }
 
 #leftSide {
   display: flex;
-  flex-direction: column;
-  flex-basis: calc(
-    100% - 476px
-  ); /* Sol tarafın genişliği, sağ taraftaki fotoğrafın genişliği kadar eksik olmalı */
+  flex-wrap: wrap;
+  width: 60%;
 }
+
 #rightSide {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Sağ taraftaki fotoğrafın üstte hizalanması için */
-  flex-basis: 476px; /* Sağ taraftaki fotoğrafın sabit genişliği */
-  margin-top: 40px; /* Sol taraftaki içeriğin üzerinde bir boşluk bırakmak için */
-}
-#rightSideBG {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  width: 396px;
 }
-.mg40 {
-  margin-bottom: 40px;
-}
+
+
+
 #rightSideFoto {
-  max-width: 100%;
-  max-height: 375px;
+  max-width: 396px;
+  height: 375px;
   box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
     0px 18px 88px -4px rgba(24, 39, 75, 0.14);
   border-radius: 18px;
+}
+.mg40 {
+  margin-bottom: 40px;
 }
 #duzCizgi {
   content: "";
@@ -68,8 +68,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  max-width: 553px;
-  max-height: 84px;
+
 }
 #sol4 {
   display: flex;
@@ -95,6 +94,7 @@
   background: #e1e1ff;
   color: #000000;
   padding: 12px 32px;
+  width: 131px;
 }
 .sol4-2 {
   display: flex;
@@ -104,18 +104,51 @@
   border: 1px solid #e1e1ff;
 }
 .sol4-2 p {
-    margin-left: 10px;
-
+  margin-left: 10px;
 }
 .sol4-3 {
-    display: flex;
-    align-items: center;
-    background: #383838;
-    color: #e1e1ff;
-    border: 1px solid #e1e1ff;
-  }
-  
+  display: flex;
+  align-items: center;
+  background: #383838;
+  color: #e1e1ff;
+  border: 1px solid #e1e1ff;
+}
+
 .sol4-3 p {
   margin-left: 10px;
 }
 
+@media (max-width: 1078px) {
+  #leftSide {
+    width: 100%;
+  }
+  
+  #rightSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #sol2{
+    text-align: center;
+  }
+#sol4{
+width: 100%;
+}
+#sol4Button {
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#sol4Button a{
+  margin: 10px 10px;
+}
+}
+
+@media (max-width: 425px) {
+  #rightSideFoto {
+    max-width: 305px;
+    height: 305px;
+  }
+}

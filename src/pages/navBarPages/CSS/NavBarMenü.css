@@ -132,6 +132,8 @@
 @media (max-width: 425px) {
     #NavMenü2ic{
       width: 85%;
+      justify-content: space-evenly;
+
     }
     .buttonNav{
  
