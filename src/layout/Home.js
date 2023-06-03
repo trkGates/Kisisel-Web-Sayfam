@@ -1,10 +1,10 @@
 import React from "react";
-import NavBar from "../pages/NavBar";
+import Main from "../pages/Main";
 
 const Home = () => {
   return (
-    <div>
-      <NavBar />
+    <div class="flex justify-center">
+      <Main />
     </div>
   );
 };

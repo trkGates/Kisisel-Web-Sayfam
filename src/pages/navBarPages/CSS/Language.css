@@ -1,0 +1,25 @@
+#languageMain{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+margin-right: 10px;
+}
+
+#Dil{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    color: #777777;   
+}
+#DilAdi{
+    color: #4731D3;
+}
+#languageButton{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

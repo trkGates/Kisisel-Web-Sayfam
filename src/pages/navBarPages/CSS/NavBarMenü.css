@@ -1,0 +1,124 @@
+#NavMenü1 {
+    margin-top: 30px;
+    display: flex;
+    text-align: center;
+    height: 62px;
+   }
+#KareDis {
+  width: 63.68px;
+  height: 62px;
+  position: absolute;
+  background-color: #eeebff;
+  border-radius: 50%;
+  display: flex;
+}
+
+#Kareic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#KareYazi {
+  color: #7b61ff;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  transform: rotate(25deg);
+}
+
+
+#NavMenü2 {
+    width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 1rem;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#NavMenü2ic{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+
+  width: 35%;
+}
+
+
+.buttonNav{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 12px 32px;
+}
+.buttonNavCerceve{
+    padding: 12px 32px;
+    border: 1px solid #3730A3;
+    border-radius: 6px;
+    gap: 10px;
+
+}
+
+@media(max-width: 1100px) {
+    #NavMenü2ic{
+      width:40%;
+    }
+    .buttonNav{
+ 
+        padding: 9px 24px;
+    }
+    .buttonNavCerceve{
+        padding: 9px 24px;
+        gap: 10px;
+    
+    }}
+
+@media(max-width: 768px) {
+    #NavMenü2ic{
+      width: 65%;
+    }
+    .buttonNav{
+ 
+        padding: 9px 24px;
+    }
+    .buttonNavCerceve{
+        padding: 9px 24px;
+        gap: 10px;
+    
+    }
+}
+@media(max-width: 500px) {
+    #NavMenü2ic{
+      width: 85%;
+    }
+    .buttonNav{
+ 
+        padding: 9px 24px;
+    }
+    .buttonNavCerceve{
+        padding: 9px 24px;
+        gap: 10px;
+    
+    }
+}
+@media (max-width: 425px) {
+    #NavMenü2ic{
+      width: 85%;
+    }
+    .buttonNav{
+ 
+        padding: 6px 16px;
+    }
+    .buttonNavCerceve{
+        padding: 6px 16px;
+        gap: 10px;
+    
+    }
+}

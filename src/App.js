@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import Home from "./layout/Home";
-import { DarkLightMod } from "./contexts/Context";
+import { DarkLightMod } from "./contexts/DarkLightContext";
 import "./app.css";
 function App() {
   const { theme } = useContext(DarkLightMod);
@@ -8,8 +8,6 @@ function App() {
   useEffect(() => {
     document.body.className = theme ? "light-mode" : "dark-mode";
   }, [theme]);
-
-
 
   return (
     <div>

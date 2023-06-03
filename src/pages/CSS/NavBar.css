@@ -1,0 +1,15 @@
+#NavBar1{
+    display: flex;
+    justify-content: flex-end;
+}
+#NavbarAyirac{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+}
+#NavBar2{
+  width: 100%;
+  height: 100%;
+}

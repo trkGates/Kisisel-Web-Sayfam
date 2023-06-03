@@ -7,7 +7,7 @@ const DarkLightTheme = ({ children }) => {
   const storedTheme = JSON.parse(localStorage.getItem("theme"));
 
   const [theme, setTheme] = useState(
-    localStorage.getItem("theme") === null ? isDarkMode : storedTheme);
+    localStorage.getItem("theme") === null ? !isDarkMode : storedTheme);
 
   useEffect(() => {
     localStorage.setItem("theme", JSON.stringify(theme));
