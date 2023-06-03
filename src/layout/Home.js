@@ -4,6 +4,7 @@ import "./Home.css";
 import Hero from "../pages/Hero";
 import Skills from "../pages/Skills";
 import Profile from "../pages/Profile";
+import Projects from "../pages/Projects";
 const Home = () => {
   return (
     <div id="MainContainer">
@@ -11,6 +12,7 @@ const Home = () => {
     <Hero/>
     <Skills/>
     <Profile/>
+    <Projects/>
     </div>
   );
 };

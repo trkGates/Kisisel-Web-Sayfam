@@ -40,23 +40,22 @@ const Profile = () => {
           Full stack web geliştirici olarak, kariyer ve eğitim geçmişimin yanı
           sıra Workintech eğitim kurumunda aldığım eğitimle bilgi ve
           becerilerimi önemli ölçüde geliştirdim. 900 saatten fazla süren bu
-          yoğun eğitim programı, beni endüstri standartlarına uygun bir
-          şekilde donatarak gerçek dünya projelerinde tecrübe kazanmama olanak
-          sağladı. Bu süre zarfında, birçok projede aktif olarak yer aldım ve
-          kendimi sürekli olarak geliştirme fırsatı buldum. Yazılım
-          geliştirmeye olan merakım ve tutkum, tamamen kullanıcı odaklı
-          deneyimler yaratma hedefiyle birleşti. Detaylara olan dikkatim ve
-          görsel estetiğe verdiğim önemle, sezgisel ve etkileyici web
-          uygulamaları oluşturmayı hedefledim. Bu süre içinde JavaScript,
-          React.js ve Node.js gibi teknolojilerde becerilerimi geliştirdim. Bu
-          sayede dinamik ve etkileşimli web siteleri inşa etme yeteneğine
-          sahip oldum. Sürekli olarak kendimi güncel tutmak ve endüstri
-          trendleriyle adım adım ilerlemek için çaba sarf ettim. Yaratıcılık,
-          teknik uzmanlık ve sürekli öğrenme tutkum, kalıcı etkiler bırakan
-          yüksek kaliteli çözümler sunma konusundaki taahhüdümü destekler.
-          Aynı vizyona sahip profesyonellerle işbirliği yapmaktan heyecan
-          duyuyorum ve her zaman yeni zorluklarla karşılaşmayı sabırsızlıkla
-          bekliyorum.
+          yoğun eğitim programı, beni endüstri standartlarına uygun bir şekilde
+          donatarak gerçek dünya projelerinde tecrübe kazanmama olanak sağladı.
+          Bu süre zarfında, birçok projede aktif olarak yer aldım ve kendimi
+          sürekli olarak geliştirme fırsatı buldum. Yazılım geliştirmeye olan
+          merakım ve tutkum, tamamen kullanıcı odaklı deneyimler yaratma
+          hedefiyle birleşti. Detaylara olan dikkatim ve görsel estetiğe
+          verdiğim önemle, sezgisel ve etkileyici web uygulamaları oluşturmayı
+          hedefledim. Bu süre içinde JavaScript, React.js ve Node.js gibi
+          teknolojilerde becerilerimi geliştirdim. Bu sayede dinamik ve
+          etkileşimli web siteleri inşa etme yeteneğine sahip oldum. Sürekli
+          olarak kendimi güncel tutmak ve endüstri trendleriyle adım adım
+          ilerlemek için çaba sarf ettim. Yaratıcılık, teknik uzmanlık ve
+          sürekli öğrenme tutkum, kalıcı etkiler bırakan yüksek kaliteli
+          çözümler sunma konusundaki taahhüdümü destekler. Aynı vizyona sahip
+          profesyonellerle işbirliği yapmaktan heyecan duyuyorum ve her zaman
+          yeni zorluklarla karşılaşmayı sabırsızlıkla bekliyorum.
         </p>
       );
     } else if (language === "en-US") {
@@ -81,28 +80,26 @@ const Profile = () => {
           As a full stack web developer, I have significantly improved my
           knowledge and skills with my career and education background as well
           as the training I received at Workintech training institution. This
-          intensive training program, which lasted more than 900 hours,
-          enabled me to gain experience in real world projects by equipping me
-          in accordance with industry standards. During this time, I actively
+          intensive training program, which lasted more than 900 hours, enabled
+          me to gain experience in real world projects by equipping me in
+          accordance with industry standards. During this time, I actively
           participated in many projects and had the opportunity to constantly
           improve myself. My curiosity and passion for software development
           combined with the goal of creating user-focused experiences. With my
           attention to detail and my emphasis on visual aesthetics, I aimed to
-          create intuitive and impressive web applications. During this time,
-          I improved my skills in technologies such as JavaScript, React.js,
-          and Node.js. This enabled me to build dynamic and interactive
-          websites. I have made efforts to keep myself up to date and to
-          progress step by step with industry trends. My creativity, technical
-          expertise, and passion for continuous learning support my commitment
-          to providing high quality solutions that leave lasting effects. I am
-          excited to collaborate with professionals who share the same vision,
-          and I always look forward to encountering new challenges.
+          create intuitive and impressive web applications. During this time, I
+          improved my skills in technologies such as JavaScript, React.js, and
+          Node.js. This enabled me to build dynamic and interactive websites. I
+          have made efforts to keep myself up to date and to progress step by
+          step with industry trends. My creativity, technical expertise, and
+          passion for continuous learning support my commitment to providing
+          high quality solutions that leave lasting effects. I am excited to
+          collaborate with professionals who share the same vision, and I always
+          look forward to encountering new challenges.
         </p>
       );
     }
   }, [language]);
-
-
 
   return (
     <div id="ProfileMain">
@@ -123,9 +120,7 @@ const Profile = () => {
             </div>
             <div className="ProfileHakkinda">
               <h5 className="ProfileHakkinda-1">{egitimDurumu}</h5>
-              <p className="ProfileHakkinda-2">
-                {egitim}
-              </p>
+              <p className="ProfileHakkinda-2">{egitim}</p>
             </div>
             <div className="ProfileHakkinda">
               <h5 className="ProfileHakkinda-1">{rol}</h5>
@@ -135,9 +130,10 @@ const Profile = () => {
         </div>
         <div id="ProfileKisim2-About">
           <h4 className="ProfilYaziBoyutu">{hakkinda}</h4>
-         <p>{hakkindaAciklama}</p>
+          <p>{hakkindaAciklama}</p>
         </div>
       </div>
+      <hr />
     </div>
   );
 };
