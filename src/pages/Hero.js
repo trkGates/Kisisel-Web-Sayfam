@@ -49,7 +49,7 @@ const {theme} = useContext(DarkLightMod);
           <div id="sol4Button">
             <a
               className="sol4-1 buttonSolFont"
-              href=""
+              href="mailto:yusuf21706@gmail.com"
               rel="noreferrer"
               target="_blank"
             >

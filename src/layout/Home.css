@@ -1,4 +1,21 @@
+#AnaContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+width: 100%
+}
 #MainContainer{
     width: 1170px;
     margin: 23px 4%;
 }
+#footerContact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #Footerİc {
+    width: 1170px;
+    display: flex;
+    justify-content: center;
+  }

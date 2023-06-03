@@ -31,7 +31,9 @@ const NavBarMenü = () => {
         <div id="NavMenü2ic">
           <button className="buttonNav">{Skills}</button>
           <button className="buttonNav">{Projects}</button>
-          <button className="buttonNavCerceve">{HireMe}</button>
+          <a className="buttonNavCerceve" href="mailto:yusuf21706@gmail.com">
+            {HireMe}
+          </a>
         </div>
       </div>
     </div>
