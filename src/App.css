@@ -1,18 +1,67 @@
 body {
-    transition: background-color 0.3s ease;
-  }
-  
-  .dark-mode {
-    background-color: #252128;
-    color: #fff;
-  }
-  
-  .light-mode {
-    background-color: #ffffff;
-    color: #222;
-  }
-  #AppMain{
-    display: flex;
-    justify-content: center;
-  }
-  
+  transition: background-color 0.3s ease;
+}
+hr {
+  border: 1px solid #BAB2E7;
+}
+.dark-mode {
+  background-color: #252128;
+}
+
+.light-mode {
+  background-color: #ffffff;
+}
+
+.light-mode p {
+  color: #6b7280;
+}
+.dark-mode p {
+  color: #ffffff;
+}
+.light-mode h2{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 72px;
+  color: #1F2937;
+}
+.dark-mode h2{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 72px;
+line-height: 72px;
+color: #AEBCCF;
+}
+.light-mode h3 {
+  color: #1f2937;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 30px;
+}
+.dark-mode h3 {
+  color: #aebccf;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 30px;
+}
+
+.light-mode h4 {
+  color: #4338ca;
+}
+
+.dark-mode h4 {
+  color: #b7aaff;
+}
+
+#AppMain {
+  display: flex;
+  justify-content: center;
+}

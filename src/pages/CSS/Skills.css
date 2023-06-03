@@ -1,0 +1,38 @@
+#SkillsMain {
+}
+#SkillsBaslik {
+  display: flex;
+}
+
+#SkillsAcıklamalar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.SkillsContainer {
+  width: 300px;
+  padding-right: 10px;
+}
+.SkillsContainer p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  padding-bottom: 42px;
+}
+.SkillsYaziBoyutu {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 28px;
+  padding-bottom: 28px;
+}
+
+
+@media (max-width: 980px) {
+  #SkillsAcıklamalar {
+    justify-content: space-around;
+  }
+}

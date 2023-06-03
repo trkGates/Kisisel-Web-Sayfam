@@ -5,9 +5,10 @@ import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { LanguageVerisi } from "../contexts/LanguageContext";
 
 import "./CSS/Hero.css";
+import { DarkLightMod } from "../contexts/DarkLightContext";
 const Hero = () => {
   const { language } = useContext(LanguageVerisi);
-
+const {theme} = useContext(DarkLightMod);
   const [sol2, setSol2] = useState("");
   const [sol3, setSol3] = useState("");
   const [sol4, setSol4] = useState("");
@@ -34,14 +35,14 @@ const Hero = () => {
         <div id="sol1" className="mg40">
           <div id="duzCizgi"></div>
           <div id="HeroName">
-            <p>Yusuf Çolak</p>
+            <h4>Yusuf Çolak</h4>
           </div>
         </div>
         <div id="sol2" className="mg40">
-          {sol2}
+          <h2>{sol2}</h2>
         </div>
         <div id="sol3" className="mg40">
-          {sol3}
+          <p>{sol3}</p>
         </div>
 
         <div id="sol4" className="mg40">
@@ -62,7 +63,7 @@ const Hero = () => {
             >
            
               <p>
-                <FontAwesomeIcon icon={faGithub} style={{ color: "#bab2e7" }} />
+                <FontAwesomeIcon icon={faGithub} style={{color: (theme===true ? "#3730A3" : "#BAB2E7") }} />
               </p>
               <p>Github</p>
             </a>
@@ -75,7 +76,7 @@ const Hero = () => {
               <p>
                 <FontAwesomeIcon
                   icon={faLinkedinIn}
-                  style={{ color: "#bab2e7" }}
+                  style={{color: (theme===true ? "#3730A3" : "#BAB2E7") }}
                 />
               </p>
               <p>Linkedin</p>

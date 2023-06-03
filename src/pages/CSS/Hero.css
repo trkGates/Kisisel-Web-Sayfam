@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   width: 100%;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 #leftSide {
@@ -21,8 +22,6 @@
   width: 396px;
 }
 
-
-
 #rightSideFoto {
   max-width: 396px;
   height: 375px;
@@ -33,13 +32,21 @@
 .mg40 {
   margin-bottom: 40px;
 }
-#duzCizgi {
+.dark-mode #duzCizgi {
   content: "";
   height: 0px;
   width: 102px;
-  background-color: #3730a3;
+  background-color: #b7aaff;
   transition: 0.4s;
-  border: 1px solid #3730a3;
+  border: 1px solid #b7aaff;
+}
+.light-mode #duzCizgi {
+  content: "";
+  height: 0px;
+  width: 102px;
+  background-color: #4338ca;
+  transition: 0.4s;
+  border: 1px solid #4338ca;
 }
 #sol1 {
   display: flex;
@@ -52,7 +59,6 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
-  color: #4338ca;
   padding-left: 10px;
 }
 #sol2 {
@@ -68,7 +74,6 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-
 }
 #sol4 {
   display: flex;
@@ -88,21 +93,35 @@
   line-height: 28px;
   border-radius: 6px;
   padding: 12px 20px 12px 12px;
-  margin-left: 12px;
+  margin-right: 12px;
 }
 .sol4-1 {
-  background: #e1e1ff;
-  color: #000000;
   padding: 12px 32px;
   width: 131px;
 }
+.light-mode .sol4-1 {
+  background: #3730a3;
+  color: #ffffff;
+}
+.dark-mode .sol4-1 {
+  background: #e1e1ff;
+  color: #000000;
+}
+
 .sol4-2 {
   display: flex;
   align-items: center;
+}
+.light-mode .sol4-2 {
+  background: #ffffff;
+  border: 1px solid #3730a3;
+}
+.dark-mode .sol4-2 {
   background: #383838;
   color: #e1e1ff;
   border: 1px solid #e1e1ff;
 }
+
 .sol4-2 p {
   margin-left: 10px;
 }
@@ -113,7 +132,15 @@
   color: #e1e1ff;
   border: 1px solid #e1e1ff;
 }
-
+.light-mode .sol4-3 {
+  background: #ffffff;
+  border: 1px solid #3730a3;
+}
+.dark-mode .sol4-3 {
+  background: #383838;
+  color: #e1e1ff;
+  border: 1px solid #e1e1ff;
+}
 .sol4-3 p {
   margin-left: 10px;
 }
@@ -122,7 +149,7 @@
   #leftSide {
     width: 100%;
   }
-  
+
   #rightSide {
     display: flex;
     justify-content: center;
@@ -130,20 +157,20 @@
     flex-wrap: wrap;
     width: 100%;
   }
-  #sol2{
+  #sol2 {
     text-align: center;
   }
-#sol4{
-width: 100%;
-}
-#sol4Button {
-  width: 100%;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-#sol4Button a{
-  margin: 10px 10px;
-}
+  #sol4 {
+    width: 100%;
+  }
+  #sol4Button {
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  #sol4Button a {
+    margin: 10px 10px;
+  }
 }
 
 @media (max-width: 425px) {

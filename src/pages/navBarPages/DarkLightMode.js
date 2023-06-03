@@ -31,7 +31,7 @@ const DarkLightMode = () => {
         <span className="slider round"></span>
         <span className={theme === false ? "slider2 round2" : ""}></span>
       </label>
-      <p>{theme === false ? darkMode : lightMode}</p>
+      <p style={{color: (theme===true ? "#777777" : "#D9D9D9") }}>{theme === false ? lightMode : darkMode}</p>
     </div>
   );
 };

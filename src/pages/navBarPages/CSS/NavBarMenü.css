@@ -8,9 +8,14 @@
   width: 63.68px;
   height: 62px;
   position: absolute;
-  background-color: #eeebff;
   border-radius: 50%;
   display: flex;
+}
+.light-mode #KareDis{
+  background-color: #eeebff;
+}
+.dark-mode #KareDis{
+  background: #4731D3;
 }
 
 #Kareic {
@@ -21,7 +26,6 @@
 }
 
 #KareYazi {
-  color: #7b61ff;
   text-align: center;
   font-family: "Inter";
   font-style: normal;
@@ -29,6 +33,14 @@
   font-size: 24px;
   line-height: 32px;
   transform: rotate(25deg);
+}
+.light-mode #KareYazi{
+  color: #7B61FF;
+
+}
+.dark-mode #KareYazi{
+  color: #8F88FF;
+
 }
 
 
@@ -57,14 +69,24 @@
     justify-content: center;
     text-align: center;
     padding: 12px 32px;
+    color: #6B7280;
 }
+
 .buttonNavCerceve{
     padding: 12px 32px;
-    border: 1px solid #3730A3;
     border-radius: 6px;
     gap: 10px;
-
 }
+.light-mode .buttonNavCerceve{
+  border: 1px solid #3730A3;
+  background: #FFFFFF;
+  color: #3730A3;
+} 
+.dark-mode .buttonNavCerceve{
+  background: #FFFFFF;
+  border: 1px solid #3730A3;
+  color: #3730A3;
+} 
 
 @media(max-width: 1100px) {
     #NavMenü2ic{
