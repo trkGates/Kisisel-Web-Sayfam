@@ -11,4 +11,8 @@ body {
     background-color: #ffffff;
     color: #222;
   }
+  #AppMain{
+    display: flex;
+    justify-content: center;
+  }
   

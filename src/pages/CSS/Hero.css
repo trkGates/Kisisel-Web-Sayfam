@@ -1,0 +1,121 @@
+#HeroMain {
+  margin-top: 88px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#leftSide {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(
+    100% - 476px
+  ); /* Sol tarafın genişliği, sağ taraftaki fotoğrafın genişliği kadar eksik olmalı */
+}
+#rightSide {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Sağ taraftaki fotoğrafın üstte hizalanması için */
+  flex-basis: 476px; /* Sağ taraftaki fotoğrafın sabit genişliği */
+  margin-top: 40px; /* Sol taraftaki içeriğin üzerinde bir boşluk bırakmak için */
+}
+#rightSideBG {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mg40 {
+  margin-bottom: 40px;
+}
+#rightSideFoto {
+  max-width: 100%;
+  max-height: 375px;
+  box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
+    0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+  border-radius: 18px;
+}
+#duzCizgi {
+  content: "";
+  height: 0px;
+  width: 102px;
+  background-color: #3730a3;
+  transition: 0.4s;
+  border: 1px solid #3730a3;
+}
+#sol1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#HeroName {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #4338ca;
+  padding-left: 10px;
+}
+#sol2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 72px;
+}
+#sol3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  max-width: 553px;
+  max-height: 84px;
+}
+#sol4 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#sol4Button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.buttonSolFont {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  border-radius: 6px;
+  padding: 12px 20px 12px 12px;
+  margin-left: 12px;
+}
+.sol4-1 {
+  background: #e1e1ff;
+  color: #000000;
+  padding: 12px 32px;
+}
+.sol4-2 {
+  display: flex;
+  align-items: center;
+  background: #383838;
+  color: #e1e1ff;
+  border: 1px solid #e1e1ff;
+}
+.sol4-2 p {
+    margin-left: 10px;
+
+}
+.sol4-3 {
+    display: flex;
+    align-items: center;
+    background: #383838;
+    color: #e1e1ff;
+    border: 1px solid #e1e1ff;
+  }
+  
+.sol4-3 p {
+  margin-left: 10px;
+}
+

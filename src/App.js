@@ -10,7 +10,7 @@ function App() {
   }, [theme]);
 
   return (
-    <div>
+    <div id="AppMain">
       <Home />
     </div>
   );

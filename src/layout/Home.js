@@ -1,10 +1,12 @@
 import React from "react";
-import Main from "../pages/Main";
-
+import NavBar from "../pages/NavBar";
+import "./Home.css";
+import Hero from "../pages/Hero";
 const Home = () => {
   return (
-    <div class="flex justify-center">
-      <Main />
+    <div id="MainContainer">
+    <NavBar/>
+    <Hero/>
     </div>
   );
 };
