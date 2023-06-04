@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import Home from "./layout/Home";
 import { DarkLightMod } from "./contexts/DarkLightContext";
-import "./app.css";
+import "./App.css";
 function App() {
   const { theme } = useContext(DarkLightMod);
 

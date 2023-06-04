@@ -6,7 +6,7 @@ body {
   justify-content: center;
 }
 hr {
-  border: 1px solid #BAB2E7;
+  border: 1px solid #bab2e7;
 }
 .dark-mode {
   background-color: #252128;
@@ -22,21 +22,21 @@ hr {
 .dark-mode p {
   color: #ffffff;
 }
-.light-mode h2{
-  font-family: 'Inter';
+.light-mode h2 {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 72px;
   line-height: 72px;
-  color: #1F2937;
+  color: #1f2937;
 }
-.dark-mode h2{
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 72px;
-line-height: 72px;
-color: #AEBCCF;
+.dark-mode h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 72px;
+  color: #aebccf;
 }
 .light-mode h3 {
   color: #1f2937;
@@ -70,15 +70,5 @@ color: #AEBCCF;
 }
 
 .dark-mode h5 {
-  color: #FFFFFF;
+  color: #ffffff;
 }
-
-
-
-
-
-
-
-
-
-
