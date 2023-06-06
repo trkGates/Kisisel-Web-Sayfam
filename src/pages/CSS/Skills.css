@@ -1,4 +1,5 @@
 #SkillsMain {
+  transition: scroll-behavior 0.5s ease-in-out;
 }
 #SkillsBaslik {
   display: flex;
@@ -29,7 +30,6 @@
   line-height: 28px;
   padding-bottom: 28px;
 }
-
 
 @media (max-width: 980px) {
   #SkillsAcıklamalar {

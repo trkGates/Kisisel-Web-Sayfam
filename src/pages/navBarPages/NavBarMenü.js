@@ -1,13 +1,14 @@
 import React, { useContext, useEffect, useState } from "react";
-
 import "./CSS/NavBarMenü.css";
 import { LanguageVerisi } from "../../contexts/LanguageContext";
+
 const NavBarMenü = () => {
   const { language, setLanguage } = useContext(LanguageVerisi);
 
-  const [Skills, setSkills] = useState(); //["Skills","Yetenekler"]
-  const [Projects, setProjects] = useState(); //["Projects","Projeler"]
-  const [HireMe, setHireMe] = useState(); //["Hire Me","Beni Kirala"]
+  const [Skills, setSkills] = useState();
+  const [Projects, setProjects] = useState();
+  const [HireMe, setHireMe] = useState();
+
   useEffect(() => {
     if (language === "tr-TR") {
       setSkills("Beceriler");
@@ -20,6 +21,19 @@ const NavBarMenü = () => {
     }
   }, [language]);
 
+  const scrollToSkills = () => {
+    const skillsElement = document.getElementById("SkillsMain");
+    setTimeout(() => {
+      skillsElement.scrollIntoView({ behavior: "smooth" });
+    }, 100); 
+  };
+  const scrollToProject = () => {
+    const skillsElement = document.getElementById("ProjectsMain");
+    setTimeout(() => {
+      skillsElement.scrollIntoView({ behavior: "smooth" });
+    }, 100); 
+  };
+
   return (
     <div id="NavMenü1">
       <div id="KareDis">
@@ -29,8 +43,12 @@ const NavBarMenü = () => {
       </div>
       <div id="NavMenü2">
         <div id="NavMenü2ic">
-          <button className="buttonNav">{Skills}</button>
-          <button className="buttonNav">{Projects}</button>
+          <button className="buttonNav" onClick={scrollToSkills}>
+            {Skills}
+          </button>
+          <button className="buttonNav" onClick={scrollToProject}>
+            {Projects}
+          </button>
           <a className="buttonNavCerceve" href="mailto:yusuf21706@gmail.com">
             {HireMe}
           </a>

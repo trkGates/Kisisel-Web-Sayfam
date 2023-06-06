@@ -72,3 +72,8 @@ hr {
 .dark-mode h5 {
   color: #ffffff;
 }
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+  /* mobil cihazlarda butona tıkladıgında arka plan rengi transparan yapar  */
+}
