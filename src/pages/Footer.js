@@ -20,7 +20,7 @@ const Footer = () => {
 
   return (
     <div id="FooterMain">
-      <div>
+      <div id="FooterMain-Yazi">
         <h3 id="footeryazi">{yazi}</h3>
       </div>
       <div id="footerAlt">
