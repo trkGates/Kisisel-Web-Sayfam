@@ -8,7 +8,7 @@ import "./CSS/Hero.css";
 import { DarkLightMod } from "../contexts/DarkLightContext";
 const Hero = () => {
   const { language } = useContext(LanguageVerisi);
-const {theme} = useContext(DarkLightMod);
+  const { theme } = useContext(DarkLightMod);
   const [sol2, setSol2] = useState("");
   const [sol3, setSol3] = useState("");
   const [sol4, setSol4] = useState("");
@@ -61,9 +61,11 @@ const {theme} = useContext(DarkLightMod);
               rel="noreferrer"
               target="_blank"
             >
-           
               <p>
-                <FontAwesomeIcon icon={faGithub} style={{color: (theme===true ? "#3730A3" : "#BAB2E7") }} />
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  style={{ color: theme === true ? "#3730A3" : "#BAB2E7" }}
+                />
               </p>
               <p>Github</p>
             </a>
@@ -76,7 +78,7 @@ const {theme} = useContext(DarkLightMod);
               <p>
                 <FontAwesomeIcon
                   icon={faLinkedinIn}
-                  style={{color: (theme===true ? "#3730A3" : "#BAB2E7") }}
+                  style={{ color: theme === true ? "#3730A3" : "#BAB2E7" }}
                 />
               </p>
               <p>Linkedin</p>
@@ -86,7 +88,7 @@ const {theme} = useContext(DarkLightMod);
       </div>
 
       <div id="rightSide">
-          <img id="rightSideFoto" src={Foto} alt="Kişisel Foto" />
+        <img id="rightSideFoto" src={Foto} alt="Kişisel Foto" />
       </div>
     </div>
   );

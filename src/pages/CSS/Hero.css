@@ -183,4 +183,9 @@
     justify-self: center;
     width: 90%;
   }
+  #sol3 {
+    display: flex;
+    justify-self: center;
+    width: 90%;
+  }
 }

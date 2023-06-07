@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { LanguageVerisi } from "../contexts/LanguageContext";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "./CSS/Skills.css";
 const Skills = () => {
   const { language } = useContext(LanguageVerisi);
@@ -34,26 +35,31 @@ const Skills = () => {
     }
   }, [language]);
 
+  
+  useEffect(() => {
+    Aos.init({ duration: 2000 , disable: false});
+  }, []);
+
   return (
-    <div id="SkillsMain">
-      <div id="SkillsBaslik">
-        <h3 >{Skills}</h3>
+    <div   id="SkillsMain">
+      <div data-aos="fade" id="SkillsBaslik">
+        <h3>{Skills}</h3>
       </div>
-      <div id="SkillsAcıklamalar">
-        <div className="SkillsContainer">
+      <div  id="SkillsAcıklamalar">
+        <div data-aos="fade-up" className="SkillsContainer">
           <h4 className="SkillsYaziBoyutu">Java Script</h4>
-          <p >{js}</p>
+          <p>{js}</p>
         </div>
-        <div className="SkillsContainer">
+        <div data-aos="fade-up" className="SkillsContainer">
           <h4 className="SkillsYaziBoyutu">React.Js</h4>
           <p>{react}</p>
         </div>
-        <div className="SkillsContainer">
+        <div data-aos="fade-up" className="SkillsContainer">
           <h4 className="SkillsYaziBoyutu">Node.Js</h4>
           <p>{node}</p>
         </div>
       </div>
-      <hr/>
+      <hr />
     </div>
   );
 };

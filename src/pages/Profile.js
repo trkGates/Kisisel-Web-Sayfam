@@ -1,7 +1,9 @@
 import React, { useContext, useEffect, useState } from "react";
-import "./CSS/Profile.css";
 import { DarkLightMod } from "../contexts/DarkLightContext";
 import { LanguageVerisi } from "../contexts/LanguageContext";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import "./CSS/Profile.css";
 
 const Profile = () => {
   const { theme } = useContext(DarkLightMod);
@@ -101,15 +103,19 @@ const Profile = () => {
     }
   }, [language]);
 
+  useEffect(() => {
+    Aos.init({ duration: 2000 , disable: false});
+  }, []);
+
   return (
-    <div id="ProfileMain">
-      <div id="ProfileKisim1">
+    <div  id="ProfileMain">
+      <div data-aos="fade" id="ProfileKisim1">
         <h3>{profil}</h3>
       </div>
       <div id="ProfileKisim2">
-        <div id="ProfileKisim2-Profile">
+        <div data-aos="fade-up" id="ProfileKisim2-Profile">
           <h4 className="ProfilYaziBoyutu">{profil}</h4>
-          <div id="ProfileKisim2-1">
+          <div  id="ProfileKisim2-1">
             <div className="ProfileHakkinda">
               <h5 className="ProfileHakkinda-1">{dTarihi}</h5>
               <p className="ProfileHakkinda-2">08.06.1999</p>
@@ -122,13 +128,13 @@ const Profile = () => {
               <h5 className="ProfileHakkinda-1">{egitimDurumu}</h5>
               <p className="ProfileHakkinda-2">{egitim}</p>
             </div>
-            <div className="ProfileHakkinda">
+            <div  className="ProfileHakkinda">
               <h5 className="ProfileHakkinda-1">{rol}</h5>
               <p className="ProfileHakkinda-2">{rolAciklama}</p>
             </div>
           </div>
         </div>
-        <div id="ProfileKisim2-About">
+        <div data-aos="fade-up" id="ProfileKisim2-About">
           <h4 className="ProfilYaziBoyutu">{hakkinda}</h4>
           <p>{hakkindaAciklama}</p>
         </div>

@@ -8,7 +8,9 @@ function App() {
   useEffect(() => {
     document.body.className = theme ? "light-mode" : "dark-mode";
   }, [theme]);
+  
 
+ 
   return (
     <div id="AppMain">
       <Home />
