@@ -5,7 +5,7 @@ import Hero from "../pages/Hero";
 import Skills from "../pages/Skills";
 import Profile from "../pages/Profile";
 import Projects from "../pages/Projects";
-import Footer from "./../pages/Footer";
+import Footer from "../pages/TempFooter";
 import { DarkLightMod } from "../contexts/DarkLightContext";
 const Home = () => {
   const { theme } = useContext(DarkLightMod);
