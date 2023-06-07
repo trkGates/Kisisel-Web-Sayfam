@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { LanguageVerisi } from "../contexts/LanguageContext";
 import "./CSS/Footer.css";
+
 const Footer = () => {
   const { language } = useContext(LanguageVerisi);
 
