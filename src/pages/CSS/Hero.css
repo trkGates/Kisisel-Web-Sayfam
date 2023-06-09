@@ -172,7 +172,12 @@
     margin: 10px 10px;
   }
 }
-
+@media (max-width: 450px) {
+  #sol2 h2 {
+    font-size: 65px;
+    line-height: 72px;
+  }
+}
 @media (max-width: 425px) {
   #rightSideFoto {
     max-width: 305px;
@@ -187,5 +192,12 @@
     display: flex;
     justify-self: center;
     width: 90%;
+  }
+}
+
+@media (max-width: 396px) {
+  #sol2 h2 {
+    font-size: 60px;
+    line-height: 72px;
   }
 }
