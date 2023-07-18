@@ -42,7 +42,7 @@ const Skills = () => {
 
   return (
     <div   id="SkillsMain">
-      <div data-aos="fade" id="SkillsBaslik">
+      <div data-aos="fade-up" id="SkillsBaslik">
         <h3>{Skills}</h3>
       </div>
       <div  id="SkillsAcıklamalar">

@@ -10,6 +10,7 @@
 
 #leftSide {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   width: 60%;
 }
@@ -65,8 +66,15 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 72px;
+  font-size: 40px;
   line-height: 72px;
+}
+#sol2Yazi{
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 28px;
 }
 #sol3 {
   font-family: "Inter";
@@ -75,6 +83,7 @@
   font-size: 18px;
   line-height: 28px;
 }
+
 #sol4 {
   display: flex;
   justify-content: flex-start;
@@ -157,9 +166,7 @@
     flex-wrap: wrap;
     width: 100%;
   }
-  #sol2 {
-    text-align: center;
-  }
+
   #sol4 {
     width: 100%;
   }
@@ -173,9 +180,13 @@
   }
 }
 @media (max-width: 450px) {
-  #sol2 h2 {
-    font-size: 65px;
-    line-height: 72px;
+  #sol2 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  #sol2Name h2{
+    font-size: 55px;
+    line-height: 70px;
   }
 }
 @media (max-width: 425px) {
@@ -187,6 +198,11 @@
     display: flex;
     justify-self: center;
     width: 90%;
+  }
+  #sol2Name h2{
+    font-size: 55px;
+    line-height: 50px;
+    flex-wrap: wrap;
   }
   #sol3 {
     display: flex;

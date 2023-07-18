@@ -36,11 +36,6 @@ const NavBarMenü = () => {
 
   return (
     <div id="NavMenü1">
-      <div id="KareDis">
-        <div id="Kareic">
-          <p id="KareYazi">Y</p>
-        </div>
-      </div>
       <div id="NavMenü2">
         <div id="NavMenü2ic">
           <button className="buttonNav" onClick={scrollToSkills}>

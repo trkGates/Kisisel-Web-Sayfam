@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { LanguageVerisi } from "../contexts/LanguageContext";
 
+import Typed from "typed.js";
 import "./CSS/Hero.css";
 import { DarkLightMod } from "../contexts/DarkLightContext";
 const Hero = () => {
@@ -12,34 +13,59 @@ const Hero = () => {
   const [sol2, setSol2] = useState("");
   const [sol3, setSol3] = useState("");
   const [sol4, setSol4] = useState("");
-
+  const [sol2Name, setSol2Name] = useState("");
   useEffect(() => {
     if (language === "tr-TR") {
-      setSol2("Yaratıcı düşünce minimalist yaklaşım");
+      setSol2("Merhaba, Ben ");
+      setSol2Name("Yusuf Çolak");
       setSol3(
-        "Merhaba, ben Yusuf. Full-stack web geliştiricisiyim. Harika kullanıcı deneyimleri ile sağlam ve ölçeklenebilir önyüz ürünleri üretecek bir Developer arıyorsanız, hadi el sıkışalım."
+        "Merhaba, Adım Yusuf ve ben bir Full-stack web geliştiricisiyim. Sizlere, etkileyici kullanıcı deneyimleri sunan, güçlü ve ölçeklenebilir önyüz ürünleri geliştirebilecek bir Developer arıyorsanız, işbirliği için hazırım. Projelerinizi başarıya taşımak için bir araya gelmeyi dört gözle bekliyorum. Kaliteli çözümler ve profesyonel yaklaşımım ile projelerinizi başarıya ulaştırmak için sabırsızlanıyorum. Detayları konuşmak ve işbirliği fırsatlarını değerlendirmek adına bir görüşme ayarlamak için lütfen benimle iletişime geçmekten çekinmeyin. "
       );
       setSol4("İletişim");
     } else if (language === "en-US") {
-      setSol2("Creative thinker Minimalism Iover");
+      setSol2("Hello, It's Me");
+      setSol2Name("Yusuf Çolak");
       setSol3(
-        "Hi, I’m Yusuf. I’m a full-stack developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Let’s shake hands with me."
+        "Hi, I'm Yusuf, a Full-stack web developer. If you are looking for a Developer who can create compelling user experiences and build robust and scalable frontend products, I'm ready for collaboration. I'm eagerly looking forward to working together to bring your projects to success. With quality solutions and a professional approach, I'm excited to help you achieve your project goals.Please feel free to get in touch to discuss the details and explore potential opportunities for cooperation."
       );
       setSol4("Contact");
     }
   }, [language]);
 
+  useEffect(() => {
+    const options = {
+      strings: [
+        "Web Developer",
+        "Frontend Developer",
+        "Backend Developer",
+        "Full Stack Developer",
+      ],
+      typeSpeed: 150,
+      backSpeed: 150,
+      loop: true,
+    };
+
+    const typingEffect = new Typed(".multitext", options);
+
+    return () => {
+      typingEffect.destroy();
+    };
+  }, []);
+
   return (
     <div id="HeroMain">
       <div id="leftSide">
-        <div id="sol1" className="mg40">
-          <div id="duzCizgi"></div>
-          <div id="HeroName">
-            <h4>Yusuf Çolak</h4>
-          </div>
+        <div id="sol1" className="mg40"></div>
+        <div>
+          <h2 id="sol2">{sol2} </h2>
         </div>
-        <div id="sol2" className="mg40">
-          <h2>{sol2}</h2>
+        <div id="sol2Name" className="mg40">
+          <h2>{sol2Name}</h2>
+        </div>
+        <div className="mg40">
+          <h2 id="sol2Yazi">
+            <span class="multitext"></span>
+          </h2>
         </div>
         <div id="sol3" className="mg40">
           <p>{sol3}</p>
