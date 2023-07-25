@@ -83,7 +83,7 @@ const Hero = () => {
             </a>
             <a
               className="sol4-2 buttonSolFont"
-              href="https://github.com/trkGates"
+              href="https://github.com/yusuf-colak"
               rel="noreferrer"
               target="_blank"
             >
@@ -96,7 +96,7 @@ const Hero = () => {
               <p>Github</p>
             </a>
             <a
-              href="https://www.linkedin.com/in/yusuf-çolak-99a309120/"
+              href="https://www.linkedin.com/in/yusufçolak/"
               className="sol4-3 buttonSolFont"
               rel="noreferrer"
               target="_blank"
