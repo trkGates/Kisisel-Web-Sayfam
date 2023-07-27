@@ -3,6 +3,7 @@ import Foto from "../img/Foto.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { LanguageVerisi } from "../contexts/LanguageContext";
+import { Document, Page } from "react-pdf";
 
 import Typed from "typed.js";
 import "./CSS/Hero.css";
@@ -14,6 +15,8 @@ const Hero = () => {
   const [sol3, setSol3] = useState("");
   const [sol4, setSol4] = useState("");
   const [sol2Name, setSol2Name] = useState("");
+  const pdfURL = "YusufColak-CV.pdf"; // CV'nizin URL'sini buraya girin.
+
   useEffect(() => {
     if (language === "tr-TR") {
       setSol2("Merhaba, Ben ");
@@ -109,6 +112,26 @@ const Hero = () => {
               </p>
               <p>Linkedin</p>
             </a>
+            <div
+              style={{
+                marginRight: "0px",
+                padding: "12px 5px",
+              }}
+              className="sol4-3 buttonSolFont"
+            >
+              <a
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexDirection: "column",
+                }}
+                href={pdfURL}
+                download
+              >
+                CV DOWNLOAD
+              </a>
+            </div>
           </div>
         </div>
       </div>
