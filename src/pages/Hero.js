@@ -51,7 +51,12 @@ const Hero = () => {
       typingEffect.destroy();
     };
   }, []);
-
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "YusufColakCV.pdf";
+    link.download = "YusufColakCV.pdf";
+    link.click();
+  };
   return (
     <div id="HeroMain">
       <div id="leftSide">
@@ -109,6 +114,7 @@ const Hero = () => {
               </p>
               <p>Linkedin</p>
             </a>
+            <button onClick={handleDownload}>Download PDF</button>
           </div>
         </div>
       </div>
