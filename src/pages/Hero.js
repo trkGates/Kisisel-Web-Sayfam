@@ -3,7 +3,6 @@ import Foto from "../img/Foto.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { LanguageVerisi } from "../contexts/LanguageContext";
-import { Document, Page } from "react-pdf";
 
 import Typed from "typed.js";
 import "./CSS/Hero.css";
