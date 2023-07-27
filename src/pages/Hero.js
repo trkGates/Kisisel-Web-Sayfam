@@ -3,7 +3,6 @@ import Foto from "../img/Foto.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { LanguageVerisi } from "../contexts/LanguageContext";
-import { Document, Page } from "react-pdf";
 
 import Typed from "typed.js";
 import "./CSS/Hero.css";
@@ -112,7 +111,7 @@ const Hero = () => {
               </p>
               <p>Linkedin</p>
             </a>
-            <div
+            {/* <div
               style={{
                 marginRight: "0px",
                 padding: "12px 5px",
@@ -131,7 +130,7 @@ const Hero = () => {
               >
                 CV DOWNLOAD
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
