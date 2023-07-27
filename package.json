@@ -16,7 +16,6 @@
     "framer-motion": "^10.12.22",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-pdf": "^7.3.0",
     "react-script-tag": "^1.1.2",
     "react-scripts": "5.0.1",
     "react-toastify": "^9.1.3",
