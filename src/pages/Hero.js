@@ -6,6 +6,7 @@ import { LanguageVerisi } from "../contexts/LanguageContext";
 import Typed from "typed.js";
 import "./CSS/Hero.css";
 import { DarkLightMod } from "../contexts/DarkLightContext";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 const Hero = () => {
   const { language } = useContext(LanguageVerisi);
   const { theme } = useContext(DarkLightMod);
@@ -114,7 +115,23 @@ const Hero = () => {
               </p>
               <p>Linkedin</p>
             </a>
-            <button onClick={handleDownload}>Download PDF</button>
+            <button
+              style={{
+                width: "175px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              className="sol4-2 buttonSolFont"
+              onClick={handleDownload}
+            >
+              <FontAwesomeIcon
+
+                style={{ color: theme === true ? "#3730A3" : "#BAB2E7" , marginRight:"5px" }}
+                icon={faDownload}
+              />
+              Download CV
+            </button>
           </div>
         </div>
       </div>
