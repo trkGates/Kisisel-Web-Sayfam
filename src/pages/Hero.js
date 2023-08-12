@@ -126,8 +126,10 @@ const Hero = () => {
               onClick={handleDownload}
             >
               <FontAwesomeIcon
-
-                style={{ color: theme === true ? "#3730A3" : "#BAB2E7" , marginRight:"5px" }}
+                style={{
+                  color: theme === true ? "#3730A3" : "#BAB2E7",
+                  marginRight: "5px",
+                }}
                 icon={faDownload}
               />
               Download CV
